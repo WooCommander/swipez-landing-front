@@ -13,7 +13,6 @@
 	font-family: sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
 	color: var(--base-font-color);
 
 	h1 {
@@ -22,6 +21,7 @@
 		font-weight: 900;
 		line-height: 72px;
 		text-align: center;
+		text-transform: uppercase;
 	}
 
 	h2 {
@@ -30,6 +30,7 @@
 		font-weight: 900;
 		line-height: 54px;
 		text-align: left;
+		text-transform: uppercase;
 	}
 
 	h3 {
@@ -38,6 +39,7 @@
 		font-weight: 900;
 		line-height: 43.2px;
 		text-align: left;
+		text-transform: uppercase;
 	}
 
 	h4 {
@@ -46,6 +48,7 @@
 		font-weight: 900;
 		line-height: 28.8px;
 		text-align: left;
+		text-transform: uppercase;
 	}
 
 	.text-header {
@@ -56,12 +59,65 @@
 		text-align: left;
 	}
 
-	.sub__text {
-		// font-family: Söhne;
-		font-size: 21px;
-		font-weight: 300;
-		line-height: 31.5px;
-		text-align: center;
+	.section {
+		// padding: 100px 0px 50px 0px;
+		background-color: var(--base-section-bg);
+		color: var(--base-font-color);
+
+		&.black {
+			background-color: var(--second-section-bg);
+			color: var(--second-font-color);
+		}
+
+		.section__title {
+			// max-width: 420px;
+		}
+
+		.section__subtext {
+			// font-family: Söhne;
+			font-size: 21px;
+			font-weight: 300;
+			line-height: 31.5px;
+			margin-top: 10px;
+			max-width: 440px;
+
+			&.center {
+				text-align: center;
+			}
+
+			&.left {
+				text-align: left;
+			}
+		}
+	}
+
+	button {
+		font-size: 16px;
+		font-weight: 500;
+		margin-right: 5px;
+		border-radius: 17px;
+		padding: 10px 20px;
+		border: none;
+		background: none;
+		cursor: pointer;
+		white-space: nowrap;
+		height: 43px;
+		/* предотвращает перенос текста */
+		color: var(--base-font-color);
+
+		&.active {
+			background: var(--btn-active);
+		}
+
+		&.second {
+			background: var(--btn-second-bg);
+			color: var(--btn-second-color);
+		}
+
+		&.third {
+			background: var(--btn-third-bg);
+			color: var(--btn-third-color);
+		}
 	}
 }
 </style>

@@ -1,21 +1,23 @@
 <!-- @format -->
 
 <template>
-	<header class="header">
-		<div class="logo">
-			<img class="logo__img" src="@/assets/img/logo.svg" alt="Logo" />
-			<img class="logo__txtimg" src="@/assets/img/swipez.svg" alt="Logo" />
-		</div>
-		<nav class="menu">
-			<router-link class="menu-item" to="/">Account</router-link>
-			<router-link class="menu-item" to="/card">Card</router-link>
-			<router-link class="menu-item" to="/pricing">Pricing</router-link>
-			<router-link class="menu-item" to="/faq">FAQ</router-link>
-			<router-link class="menu-item" to="/contact">Contact</router-link>
-		</nav>
-		<div class="auth">
-			<button>Log in</button>
-			<button class="active">Sign Up</button>
+	<header>
+		<div class="container header">
+			<div class="logo">
+				<img class="logo__img" src="@/assets/img/logo.svg" alt="Logo" />
+				<img class="logo__txtimg" src="@/assets/img/swipez.svg" alt="Logo" />
+			</div>
+			<nav class="menu">
+				<router-link class="menu-item" to="/">Account</router-link>
+				<router-link class="menu-item" to="/card">Card</router-link>
+				<router-link class="menu-item" to="/pricing">Pricing</router-link>
+				<router-link class="menu-item" to="/faq">FAQ</router-link>
+				<router-link class="menu-item" to="/contact">Contact</router-link>
+			</nav>
+			<div class="auth">
+				<button>Log in</button>
+				<button class="active">Sign Up</button>
+			</div>
 		</div>
 	</header>
 </template>
@@ -74,24 +76,7 @@
 		display: flex;
 		align-items: center;
 
-		button {
-			font-size: 16px;
-			font-weight: 500;
-			margin-right: 5px;
-			border-radius: 17px;
-			padding: 10px 20px;
-			border: none;
-			background: none;
-			cursor: pointer;
-			white-space: nowrap;
-			height: 43px;
-			/* предотвращает перенос текста */
-			color: var(--base-font-color);
-
-			&.active {
-				background: var(--btn-active);
-			}
-		}
+	
 	}
 
 	/* Стили для мобильной версии */

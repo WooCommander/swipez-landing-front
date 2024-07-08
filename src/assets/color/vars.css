@@ -29,10 +29,19 @@
 
   --prme-default: #fff;
 
-  --base-baground:#F9F5EF;
+  --base-background:#F9F5EF;
+  
   --base-font-color:#000;
-  --base-section-bg:#000;
+  --second-font-color:#fff;
+
+  --base-section-bg:#F9F5EF;
+  --second-section-bg:#000;
+
   --btn-active:#FCD713;
+  --btn-second-bg:#000;
+  --btn-second-color:#ffff;
+  --btn-third-bg:#ffff;
+  --btn-third-color:#000;
   
 
 }
