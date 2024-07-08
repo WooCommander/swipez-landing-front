@@ -1,0 +1,38 @@
+:root {
+  --tir-second-100: #8d8da6;
+  --tir-second-75: #b8b8cc;
+  --tir-second-50: #e9e9f2;
+  --tir-second-25: #f5f5fa;
+  --tir-second-0: #f7f9fc;
+
+  .c-second-100 {
+    color: var(--tir-second-100);
+  }
+  .bg-second-100 {
+    background-color: var(--tir-second-100);
+  }
+  .c-second-75 {
+    color: var(--tir-second-75);
+  }
+  .bg-second-75 {
+    background-color: var(--tir-second-75);
+  }
+  .c-second-50 {
+    color: var(--tir-second-50);
+  }
+  .bg-second-50 {
+    background-color: var(--tir-second-50);
+  }
+  .c-second-25 {
+    color: var(--tir-second-25);
+  }
+  .bg-second-25 {
+    background-color: var(--tir-second-25);
+  }
+  .c-second-0 {
+    color: var(--tir-second-0);
+  }
+  .bg-second-0 {
+    background-color: var(--tir-second-0);
+  }
+}

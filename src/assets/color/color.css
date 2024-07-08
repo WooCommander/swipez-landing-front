@@ -1,0 +1,102 @@
+:root {
+  .c-brand {
+    color: var(--prme-brand);
+  }
+  .bg-brand {
+    background-color: var(--prme-brand);
+  }
+  .c-brand-tr {
+    color: var(--prme-brand-tr);
+  }
+  .bg-brand-tr {
+    background-color: var(--prme-brand-tr);
+  }
+
+  .c-warn {
+    color: var(--prme-warn);
+  }
+  .bg-warn {
+    background-color: var(--prme-warn);
+  }
+  .c-warn-tr {
+    color: var(--prme-warn-tr);
+  }
+  .bg-warn-tr {
+    background-color: var(--prme-warn-tr);
+  }
+
+  .c-success {
+    color: var(--prme-success);
+  }
+  .bg-success {
+    background-color: var(--prme-success);
+  }
+  .c-success-tr {
+    color: var(--prme-success-tr);
+  }
+  .bg-success-tr {
+    background-color: var(--prme-success-tr);
+  }
+
+  .c-danger {
+    color: var(--prme-danger);
+  }
+  .bg-danger {
+    background-color: var(--prme-danger);
+  }
+  .c-danger-tr {
+    color: var(--prme-danger-tr);
+  }
+  .bg-danger-tr {
+    background-color: var(--prme-danger-tr);
+  }
+
+  .c-base {
+    color: var(--prme-base);
+  }
+  .bg-base {
+    background-color: var(--prme-base);
+  }
+
+  .c-second-100 {
+    color: var(--prme-second-100);
+  }
+  .bg-second-100 {
+    background-color: var(--prme-second-100);
+  }
+
+  .c-second-75 {
+    color: var(--prme-second-75);
+  }
+  .bg-second-75 {
+    background-color: var(--prme-second-75);
+  }
+
+  .c-second-50 {
+    color: var(--prme-second-50);
+  }
+  .bg-second-50 {
+    background-color: var(--prme-second-50);
+  }
+
+  .c-second-25 {
+    color: var(--prme-second-25);
+  }
+  .bg-second-25 {
+    background-color: var(--prme-second-25);
+  }
+
+  .c-second-0 {
+    color: var(--prme-second-0);
+  }
+  .bg-second-0 {
+    background-color: var(--prme-second-0);
+  }
+
+  .c-default {
+    color: var(--prme-default);
+  }
+  .bg-default {
+    background-color: var(--prme-default);
+  }
+}

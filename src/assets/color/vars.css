@@ -1,0 +1,38 @@
+:root {
+  --prme-brand: #33ccff;
+  --prme-brand-tr: #f0fbff;
+  --prme-brand-h: #66d9ff;
+  --prme-brand-a: #2eb8e6;
+
+  --prme-warn: #ffbf00;
+  --prme-warn-tr: #fff9e6;
+  --prme-warn-h: #ffd24d;
+  --prme-warn-a: #e6ac00;
+
+  --prme-success: #16d977;
+  --prme-success-tr: #edfff6;
+  --prme-success-h: #6cd9a3;
+  --prme-success-a: #13bf69;
+
+  --prme-danger: #ff667f;
+  --prme-danger-tr: #fff2f4;
+  --prme-danger-h: #ff8c9f;
+  --prme-danger-a: #e65c73;
+
+  --prme-base: #525266;
+
+  --prme-second-100: #8d8da6;
+  --prme-second-75: #b8b8cc;
+  --prme-second-50: #e9e9f2;
+  --prme-second-25: #f5f5fa;
+  --prme-second-0: #f7f9fc;
+
+  --prme-default: #fff;
+
+  --base-baground:#F9F5EF;
+  --base-font-color:#000;
+  --base-section-bg:#000;
+  --btn-active:#FCD713;
+  
+
+}

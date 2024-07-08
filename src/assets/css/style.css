@@ -1,0 +1,57 @@
+@import '../color/index.css';
+
+html {
+    scrollbar-width: none; /* Firefox */
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+a:hover, a:focus, a:active, a {
+    text-decoration: none;
+    outline: none;
+}
+
+input:hover, input:focus, input:active, input, button:hover, button:focus, button:active, button {
+    border: none;
+    outline: none;
+}
+
+.container-fluid {
+    max-width: 1270px;
+}
+
+
+
+.light-theme-bg-white {
+    background: #fff;
+}
+.light-theme-bg-grey {
+    background: #f3f4f9;
+}
+.light-theme-color-black {
+    color: black;
+}
+
+
+
+.dark-theme-bg-black {
+    background-color: #0a0d18;
+}
+.dark-theme-bg-blue {
+    background-color: #00132c;
+}
+.dark-theme-color-white {
+    color: white;
+}
+.dark-theme-color-grey {
+    color: #f3f4f9;
+}
+
+
+/* select */

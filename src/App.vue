@@ -1,30 +1,67 @@
+<!-- @format -->
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+	<router-view />
 </template>
 
-<style lang="less">
+<style lang="scss">
+@import url("@/assets/css/reset.min.css");
+@import url("@/assets/css/bootstrap-grid.min.css");
+@import url("@/assets/css/style.css");
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: var(--base-font-color);
 
-nav {
-  padding: 30px;
+	h1 {
+		font-family: MADE Outer Sans;
+		font-size: 80px;
+		font-weight: 900;
+		line-height: 72px;
+		text-align: center;
+	}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+	h2 {
+		font-family: MADE Outer Sans;
+		font-size: 60px;
+		font-weight: 900;
+		line-height: 54px;
+		text-align: left;
+	}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+	h3 {
+		// font-family: MADE Outer Sans;
+		font-size: 48px;
+		font-weight: 900;
+		line-height: 43.2px;
+		text-align: left;
+	}
+
+	h4 {
+		// font-family: MADE Outer Sans;
+		font-size: 32px;
+		font-weight: 900;
+		line-height: 28.8px;
+		text-align: left;
+	}
+
+	.text-header {
+		font-family: MADE Outer Sans;
+		font-size: 21px;
+		font-weight: 900;
+		line-height: 18.9px;
+		text-align: left;
+	}
+
+	.sub__text {
+		// font-family: Söhne;
+		font-size: 21px;
+		font-weight: 300;
+		line-height: 31.5px;
+		text-align: center;
+	}
 }
 </style>

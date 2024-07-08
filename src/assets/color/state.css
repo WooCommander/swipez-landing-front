@@ -1,0 +1,45 @@
+:root {
+  --tir-brand: #33ccff;
+  --tir-success: #16d977;
+  --tir-warn: #ffbf00;
+  --tir-danger: #ff667f;
+  --tir-base: #525266;
+  --tir-default: #ffffff;
+
+  .c-brand {
+    color: var(--tir-brand);
+  }
+  .bg-brand {
+    background-color: var(--tir-brand);
+  }
+  .c-success {
+    color: var(--tir-success);
+  }
+  .bg-success {
+    background-color: var(--tir-success);
+  }
+  .c-warn {
+    color: var(--tir-warn);
+  }
+  .bg-warn {
+    background-color: var(--tir-warn);
+  }
+  .c-danger {
+    color: var(--tir-danger);
+  }
+  .bg-danger {
+    background-color: var(--tir-danger);
+  }
+  .c-base {
+    color: var(--tir-base);
+  }
+  .bg-base {
+    background-color: var(--tir-base);
+  }
+  .c-default {
+    color: var(--tir-default);
+  }
+  .bg-default {
+    background-color: var(--tir-default);
+  }
+}
