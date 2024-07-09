@@ -90,7 +90,9 @@
 			}
 		}
 	}
-
+	.pointer {
+		cursor: pointer;
+	}
 	button {
 		font-size: 16px;
 		font-weight: 500;

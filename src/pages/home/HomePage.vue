@@ -95,7 +95,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section py-5">
+		<div class="section pt-5">
 			<div class="container">
 				<div class="section__title">
 					<h3>Explore <br />our pricing</h3>
@@ -104,6 +104,74 @@
 				<div class="section__subtext">
 					<button class="second mt-2">Create Account</button>
 				</div>
+				<div class="detail">
+					<div class="detail__title">
+						<div>BUSINESS</div>
+						<div>PERSONAL</div>
+					</div>
+					<div class="detail__data">
+						<div class="row">
+							<div class="col-9">
+								Handling of documents and opening a customer account
+							</div>
+							<div class="col">2000 EUR</div>
+						</div>
+						<div class="row">
+							<div class="col-9">Account monthly service fee</div>
+							<div class="col">100 EUR</div>
+						</div>
+						<div class="row">
+							<div class="col-9">Incoming internal paymentt</div>
+							<div class="col">Free of change</div>
+						</div>
+						<div class="row">
+							<div class="col-9">Incoming SEPA-paymen</div>
+							<div class="col">0.5%</div>
+						</div>
+						<div class="row">
+							<div class="col-9">Incoming Swift payment</div>
+							<div class="col">0.7%</div>
+						</div>
+						<div class="row">
+							<div class="col-9">
+								Internal outgoing payment between own accounts within Swipez
+							</div>
+							<div class="col">Free of change</div>
+						</div>
+						<div class="row">
+							<div class="col-9">Internal outgoing payment within Swipez</div>
+							<div class="col">Free of change</div>
+						</div>
+						<div class="row">
+							<div class="col-9">Outgoing SEPA-payment</div>
+							<div class="col">1.0%</div>
+						</div>
+						<div class="row">
+							<div class="col-9">Outgoing Swift paymen</div>
+							<div class="col">0.3%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section py-5">
+			<div class="container">
+				<div class="section__title">
+					<h3>
+						Frequently<br />
+						asked questions
+					</h3>
+				</div>
+				<div class="detail">
+					<div class="detail__data mt-5">
+						<QuestionItem
+							:data="item"
+							v-for="(item, idx) of items"
+							:key="idx"
+							@showAnswer="onShowAnswer"
+						/>
+					</div>
+				</div>
 			</div>
 		</div>
 	</DefaultLayout>
@@ -111,12 +179,43 @@
 
 <script setup lang="ts">
 // Импорты из Vue 3 Composition API
+import { QuestionItem, QuestionItemModel } from "@/components";
 import { DefaultLayout } from "@/layout";
 import { ref, computed, defineProps, defineEmits, onMounted, watch } from "vue";
+import HomeAdapterService from "./adapter/HomeAdapterService";
+
+const items = ref(Array<QuestionItemModel>());
+
+const adapter = new HomeAdapterService();
+
+onMounted(async () => {
+	items.value = await adapter.getsQuestions();
+});
+const onShowAnswer = (id: string) => {
+	console.log(id);
+
+	items.value.forEach((el) => (el.Visible = el.Id == id));
+};
 </script>
 
 <style lang="scss">
-.myclass {
-	padding: 10px;
+.detail {
+	margin: 40px 0px 0px 160px;
+
+	.detail__title {
+		display: flex;
+		margin: 20px 0px;
+		font-weight: 900;
+
+		div {
+			margin-right: 20px;
+		}
+	}
+
+	.detail__data {
+		.row {
+			padding: 15px 0px;
+		}
+	}
 }
 </style>
