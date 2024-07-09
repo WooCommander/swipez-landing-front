@@ -9,9 +9,10 @@
 			</div>
 			<nav class="menu">
 				<router-link class="menu-item" to="/">Account</router-link>
-				<router-link class="menu-item" to="/card">Card</router-link>
-				<router-link class="menu-item" to="/pricing">Pricing</router-link>
-				<router-link class="menu-item" to="/faq">FAQ</router-link>
+				<!-- <router-link class="menu-item" to="#pricing">Pricing</router-link> -->
+				<a class="menu-item" href="#pricing">Pricing</a>
+				<!-- <router-link class="menu-item" to="/faq">FAQ</router-link> -->
+				<a class="menu-item" href="#faq">FAQ</a>
 				<router-link class="menu-item" to="/contact">Contact</router-link>
 			</nav>
 			<div class="auth">
@@ -75,8 +76,6 @@
 	.auth {
 		display: flex;
 		align-items: center;
-
-	
 	}
 
 	/* Стили для мобильной версии */

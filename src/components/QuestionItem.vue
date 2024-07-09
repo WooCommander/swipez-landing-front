@@ -2,7 +2,7 @@
 
 <template>
 	<div class="row question__item" v-if="data?.Id" @click="toggleVisibility">
-		<div class="col">{{ data?.Question }}?</div>
+		<div class="col">{{ data?.Question }}</div>
 		<div class="col-1 pointer">
 			<img
 				:class="{ visible: data?.Visible }"
@@ -11,14 +11,14 @@
 			/>
 		</div>
 	</div>
-	<div v-if="data?.Visible" class="answer">
+	<div ref="answerRef" :class="{ visible: data?.Visible }" class="answer">
 		{{ data?.Answer }}
 	</div>
 </template>
 
 <script setup lang="ts">
 // Импорты из Vue 3 Composition API
-import { ref, computed, defineProps, onMounted } from "vue";
+import { ref, computed, defineProps, defineEmits, onMounted, watch } from "vue";
 import QuestionItemModel from "./question/QuestionItemModel";
 
 // Определение пропсов компонента
@@ -28,16 +28,35 @@ const props = defineProps({
 
 const emits = defineEmits<{ showAnswer: [string] }>();
 
-onMounted(() => {});
 //Создание реактивного свойства для данных
-const data = computed(() => {
-	return props.data;
-});
+const data = computed(() => props.data);
+
+// Ссылка на элемент ответа
+const answerRef = ref<HTMLElement | null>(null);
 
 // Функция для переключения видимости ответа
 function toggleVisibility() {
-	if (data?.value?.Id) emits("showAnswer", data?.value.Id);
+	if (data.value?.Id) {
+		data.value.Visible = !data.value.Visible;
+		if (data.value.Visible) {
+			emits("showAnswer", data.value.Id);
+		}
+	}
 }
+
+// Наблюдение за изменением видимости для анимации
+watch(
+	() => data.value?.Visible,
+	(newVal) => {
+		if (answerRef.value) {
+			if (newVal) {
+				answerRef.value.style.maxHeight = 30 + answerRef.value.scrollHeight + "px";
+			} else {
+				answerRef.value.style.maxHeight = "0";
+			}
+		}
+	}
+);
 </script>
 
 <style scoped lang="scss">
@@ -69,7 +88,16 @@ function toggleVisibility() {
 }
 
 .answer {
-	padding: 15px 0;
 	color: #555;
+	max-height: 0px;
+	overflow: hidden;
+
+	transition: max-height 0.5s ease;
+
+	&.visible {
+		transition: all 0.5s;
+		padding: 20px 0;
+		max-height: fit-content;
+	}
 }
 </style>

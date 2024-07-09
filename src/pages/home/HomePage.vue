@@ -23,7 +23,7 @@
 		<div class="section py-5">
 			<div class="container">
 				<div class="section__title">
-					<h3>
+					<h3 id="account">
 						PERSONAL<br />
 						AND BUSINESS<br />
 						ACCOUNT
@@ -98,7 +98,7 @@
 		<div class="section pt-5">
 			<div class="container">
 				<div class="section__title">
-					<h3>Explore <br />our pricing</h3>
+					<h3 id="pricing">Explore <br />our pricing</h3>
 				</div>
 
 				<div class="section__subtext">
@@ -154,7 +154,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section py-5">
+		<div class="section py-5" id="faq">
 			<div class="container">
 				<div class="section__title">
 					<h3>
