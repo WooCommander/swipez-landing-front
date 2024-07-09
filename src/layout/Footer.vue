@@ -4,10 +4,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div>
-				<h3>
-					NEED OUR<br />
-					TEAM HELP?
-				</h3>
+				<h3 v-html="$t('footer.NEED OUR TEAM HELP?')" />
 			</div>
 			<div class="contacts">
 				<div class="call">
@@ -22,32 +19,20 @@
 			<div class="menu">
 				<div class="copyright">Copyright © 2024 Swipez <br />All Rights Reserved</div>
 				<div>
-					<span>Privacy Policy</span> <span>Terms and Conditions</span>
-					<span> Claims Procedure</span> <span> Cryptocurrency Exchange Notice</span>
+					<span>{{ $t("footer.Privacy Policy") }}</span>
+					<span>{{ $t("footer.Terms and Conditions") }}</span>
+					<span> {{ $t("footer.Claims Procedure") }}</span>
+					<span> {{ $t("footer.Cryptocurrency Exchange Notice") }}</span>
 				</div>
 			</div>
 			<p class="text">
-				To learn about which Revolut company serves you or if you have any questions,
-				please contact us through our in-app chat.
+				{{ $t("footer.desk0") }}
 			</p>
 			<p>
-				Revolut Ltd is registered in England and Wales (No. 08804411), 7 Westferry Circus,
-				Canary Wharf, London, England, E14 4HD and is authorised by the Financial Conduct
-				Authority under the Electronic Money Regulations 2011 (Firm Reference 900562).
-				Revolut Travel Ltd is authorised by the Financial Conduct Authority to undertake
-				insurance distribution activities (FCA No: 780586). Our insurance products are
-				arranged by Revolut Travel Ltd and Revolut Ltd, which is an appointed
-				representative of Revolut Travel Ltd. Revolut’s stock trading products are
-				provided by Revolut Trading Ltd (No. 832790), an appointed representative of
-				Resolution Compliance Ltd, which is authorised and regulated by the Financial
-				Conduct Authority.
+				{{ $t("footer.desk1") }}
 			</p>
 			<p>
-				Revolut Ltd is also registered with the Financial Conduct Authority to offer
-				cryptocurrency services under the Money Laundering, Terrorist Financing and
-				Transfer of Funds (Information on the Payer) Regulations 2017. Precious metals
-				services are provided by Revolut Ltd and are not regulated by the Financial
-				Conduct Authority.
+				{{ $t("footer.desk2") }}
 			</p>
 		</div>
 	</footer>

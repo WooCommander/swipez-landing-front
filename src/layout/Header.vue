@@ -8,16 +8,14 @@
 				<img class="logo__txtimg" src="@/assets/img/swipez.svg" alt="Logo" />
 			</div>
 			<nav class="menu">
-				<router-link class="menu-item" to="/">Account</router-link>
-				<!-- <router-link class="menu-item" to="#pricing">Pricing</router-link> -->
-				<a class="menu-item" href="#pricing">Pricing</a>
-				<!-- <router-link class="menu-item" to="/faq">FAQ</router-link> -->
-				<a class="menu-item" href="#faq">FAQ</a>
-				<router-link class="menu-item" to="/contact">Contact</router-link>
+				<router-link class="menu-item" to="/">{{ $t("Account") }}</router-link>
+				<a class="menu-item" href="#pricing">{{ $t("Pricing") }}</a>
+				<a class="menu-item" href="#faq">{{ $t("FAQ") }}</a>
+				<router-link class="menu-item" to="/contact">{{ $t("Contact") }}</router-link>
 			</nav>
 			<div class="auth">
-				<button>Log in</button>
-				<button class="active">Sign Up</button>
+				<button>{{ $t("Log in") }}</button>
+				<button class="active">{{ $t("Sign Up") }}</button>
 			</div>
 		</div>
 	</header>
@@ -57,7 +55,6 @@
 			color: var(--base-font-color);
 
 			&.router-link-exact-active {
-				// color: var(--prme-second-100);
 				font-weight: 900;
 			}
 		}

@@ -5,12 +5,16 @@
 		<div class="section py-5">
 			<div class="container align-center">
 				<h1>
-					UNITED<br />
-					BANKING
+					<p v-html="$t('UNITED BANKING')"></p>
 				</h1>
 				<div class="section__subtext center" style="max-width: none">
-					Connect your partners into unified ecosystem <br />
-					for rapid and secure fund flows
+					<p
+						v-html="
+							$t(
+								'Connect your partners into unified ecosystem for rapid and secure fund flows'
+							)
+						"
+					></p>
 				</div>
 			</div>
 		</div>
@@ -24,58 +28,42 @@
 			<div class="container">
 				<div class="section__title">
 					<h3 id="account">
-						PERSONAL<br />
-						AND BUSINESS<br />
-						ACCOUNT
+						<p v-html="$t('account.PERSONAL AND BUSINESS ACCOUNT')"></p>
 					</h3>
 				</div>
 				<div class="d-flex">
 					<div class="section__subtext">
 						<div>
-							Manage all your financial transactions,<br />
-							make and receive payments.<br />
-							All-in-one space.
+							<p
+								v-html="
+									$t(
+										'account.Manage all your financial transactions, make and receive payments. All-in-one space.'
+									)
+								"
+							></p>
 						</div>
-						<button class="second mt-2">Create Account</button>
+						<button class="second mt-2">{{ $t("account.Create Account") }}</button>
 					</div>
 
 					<div class="ml-5 section__subtext">
-						Fast online application and onboarding<br /><br />
-						Execute all banking tasks at lightspeed <br /><br />
-						SEPA & SWIFT for easy fund transfers globally<br /><br />
-						Crypto payments and investments <br /><br />
-						Personalized support available anytime
+						{{ $t("account.Fast online application and onboarding") }}<br /><br />
+						{{ $t("account.Execute all banking tasks at lightspeed") }} <br /><br />
+						{{ $t("account.SEPA & SWIFT for easy fund transfers globally") }}<br /><br />
+						{{ $t("account.Crypto payments and investments") }} <br /><br />
+						{{ $t("account.Personalized support available anytime") }}
 						<div>
-							<h4 class="mt-5">
-								TOP-TIER<br />
-								SECURITY
-							</h4>
-							<p class="mt-2">
-								Trust in our state-of-the-art security protocols designed to provide peace
-								of mind, so you can focus on managing your finances with confidence.
-							</p>
+							<h4 class="mt-5" v-html="$t('account.TOP-TIER SECURITY')" />
+							<p class="mt-2" v-html="$t('account.Trust')" />
 						</div>
 						<div>
-							<h4 class="mt-5">
-								SMOOTH<br />
-								TRANSACTIONS
-							</h4>
-							<p class="mt-2">
-								Experience seamless and efficient transactions like never before. Our
-								platform ensures every payment and banking task is processed swiftly,
-								securely, and without hassle.
-							</p>
+							<h4 class="mt-5" v-html="$t('account.SMOOTH TRANSACTIONS')" />
+
+							<p class="mt-2" v-html="$t('account.Our platform')" />
 						</div>
 						<div>
-							<h4 class="mt-5">
-								INTEGRATED<br />
-								ECOSYSTEM
-							</h4>
-							<p class="mt-2">
-								Our platform connects all your partners, employees, and contractors in one
-								unified hub. Experience seamless collaboration and streamlined
-								communication across your entire network.
-							</p>
+							<h4 class="mt-5" v-html="$t('account.INTEGRATED ECOSYSTEM')" />
+
+							<p class="mt-2" v-html="$t('account.Experience')" />
 						</div>
 					</div>
 				</div>
@@ -84,70 +72,84 @@
 		<div class="section black py-5">
 			<div class="container">
 				<div class="section__title">
-					<h2>
-						Explore a complete <br />financial platform<br />
-						powered by bank<br />account
-					</h2>
+					<h2
+						v-html="$t('EXPLORE A COMPLETE FINANCIAL PLATFORM POWERED BY BANK ACCOUNT')"
+					/>
 				</div>
 
 				<div class="section__subtext">
-					<button class="third mt-2">Create Account</button>
+					<button class="third mt-2">{{ $t("account.Create Account") }}</button>
 				</div>
 			</div>
 		</div>
 		<div class="section pt-5">
 			<div class="container">
 				<div class="section__title">
-					<h3 id="pricing">Explore <br />our pricing</h3>
+					<h3 id="pricing">{{ $t("pricing.EXPLORE OUR PRICING") }}</h3>
 				</div>
-
 				<div class="section__subtext">
-					<button class="second mt-2">Create Account</button>
+					<button class="second mt-2">{{ $t("account.Create Account") }}</button>
 				</div>
 				<div class="detail">
 					<div class="detail__title">
-						<div>BUSINESS</div>
-						<div>PERSONAL</div>
+						<div>{{ $t("pricing.BUSINESS") }}</div>
+						<div>{{ $t("pricing.PERSONAL") }}</div>
 					</div>
 					<div class="detail__data">
 						<div class="row">
 							<div class="col-9">
-								Handling of documents and opening a customer account
+								{{ $t("pricing.Handling of documents and opening a customer account") }}
 							</div>
 							<div class="col">2000 EUR</div>
 						</div>
 						<div class="row">
-							<div class="col-9">Account monthly service fee</div>
+							<div class="col-9">
+								{{ $t("pricing.Account monthly service fee") }}
+							</div>
 							<div class="col">100 EUR</div>
 						</div>
 						<div class="row">
-							<div class="col-9">Incoming internal paymentt</div>
-							<div class="col">Free of change</div>
+							<div class="col-9">
+								{{ $t("pricing.Incoming internal paymentt") }}
+							</div>
+							<div class="col">{{ $t("pricing.Free of change") }}</div>
 						</div>
 						<div class="row">
-							<div class="col-9">Incoming SEPA-paymen</div>
+							<div class="col-9">
+								{{ $t("pricing.Incoming SEPA-paymen") }}
+							</div>
 							<div class="col">0.5%</div>
 						</div>
 						<div class="row">
-							<div class="col-9">Incoming Swift payment</div>
+							<div class="col-9">
+								{{ $t("pricing.Incoming Swift payment") }}
+							</div>
 							<div class="col">0.7%</div>
 						</div>
 						<div class="row">
 							<div class="col-9">
-								Internal outgoing payment between own accounts within Swipez
+								{{
+									$t(
+										"pricing.FInternal outgoing payment between own accounts within Swipez"
+									)
+								}}
 							</div>
-							<div class="col">Free of change</div>
+							<div class="col">{{ $t("pricing.Free of change") }}</div>
 						</div>
 						<div class="row">
-							<div class="col-9">Internal outgoing payment within Swipez</div>
-							<div class="col">Free of change</div>
+							<div class="col-9">
+								{{ $t("pricing.Internal outgoing payment within Swipez") }}
+							</div>
+							<div class="col">{{ $t("pricing.Free of change") }}</div>
 						</div>
 						<div class="row">
-							<div class="col-9">Outgoing SEPA-payment</div>
+							<div class="col-9">
+								{{ $t("pricing.Outgoing SEPA-payment") }}
+							</div>
 							<div class="col">1.0%</div>
 						</div>
 						<div class="row">
-							<div class="col-9">Outgoing Swift paymen</div>
+							<div class="col-9">{{ $t("pricing.Outgoing Swift paymen") }}</div>
 							<div class="col">0.3%</div>
 						</div>
 					</div>
@@ -157,10 +159,7 @@
 		<div class="section py-5" id="faq">
 			<div class="container">
 				<div class="section__title">
-					<h3>
-						Frequently<br />
-						asked questions
-					</h3>
+					<h3 v-html="$t('questtions.FREQUENTLY ASKED QUESTIONS')" />
 				</div>
 				<div class="detail">
 					<div class="detail__data mt-5">
