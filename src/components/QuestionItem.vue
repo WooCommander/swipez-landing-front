@@ -1,9 +1,9 @@
 <!-- @format -->
 
 <template>
-	<div class="row question__item" v-if="data?.Id">
+	<div class="row question__item" v-if="data?.Id" @click="toggleVisibility">
 		<div class="col">{{ data?.Question }}?</div>
-		<div class="col-1 pointer" @click="toggleVisibility">
+		<div class="col-1 pointer">
 			<img
 				:class="{ visible: data?.Visible }"
 				src="@/assets/img/plus.svg"
@@ -20,7 +20,6 @@
 // Импорты из Vue 3 Composition API
 import { ref, computed, defineProps, onMounted } from "vue";
 import QuestionItemModel from "./question/QuestionItemModel";
-// import { QuestionItemModel } from "@/components";
 
 // Определение пропсов компонента
 const props = defineProps({
@@ -29,15 +28,7 @@ const props = defineProps({
 
 const emits = defineEmits<{ showAnswer: [string] }>();
 
-onMounted(() => {
-	// innerData.value = new QuestionItemModel({
-	// 	Id: "1",
-	// 	Question: "Residents of what countries may not open an account?",
-	// 	Answer:
-	// 		"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt obcaecati, mollitia doloremque rem nemo tempore autem. Veniam inventore error asperiores architecto quaerat voluptatibus, qui, illum sed assumenda vero excepturi cum. ",
-	// 	Visible: false,
-	// });
-});
+onMounted(() => {});
 //Создание реактивного свойства для данных
 const data = computed(() => {
 	return props.data;
@@ -45,7 +36,7 @@ const data = computed(() => {
 
 // Функция для переключения видимости ответа
 function toggleVisibility() {
-	emits("showAnswer", data?.value.Id);
+	if (data?.value?.Id) emits("showAnswer", data?.value.Id);
 }
 </script>
 
