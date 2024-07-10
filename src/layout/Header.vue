@@ -15,7 +15,18 @@
 			</nav>
 			<div class="auth">
 				<button>{{ $t("Log in") }}</button>
-				<button class="active">{{ $t("Sign Up") }}</button>
+				<button class="active">{{ $t("header.Sign Up") }}</button>
+			</div>
+			<div class="locale-changer">
+				<select v-model="$i18n.locale">
+					<option
+						v-for="locale in $i18n.availableLocales"
+						:key="`locale-${locale}`"
+						:value="locale"
+					>
+						{{ locale }}
+					</option>
+				</select>
 			</div>
 		</div>
 	</header>

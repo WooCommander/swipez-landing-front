@@ -163,6 +163,7 @@
 				</div>
 				<div class="detail">
 					<div class="detail__data mt-5">
+						
 						<QuestionItem
 							:data="item"
 							v-for="(item, idx) of items"

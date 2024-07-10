@@ -6,6 +6,9 @@ export default {
   "Log in": "Войти",
   "UNITED BANKING": "ОБЪЕДИНЕННЫЙ <br>БАНКОВСКИЙ",
   "Connect your partners into unified ecosystem for rapid and secure fund flows": "Соедините своих партнеров в единую экосистему <br />для быстрых и безопасных денежных потоков",
+  header: {
+    "Sign Up": "Регистрация",
+  },
   account: {
     "PERSONAL AND BUSINESS ACCOUNT": "ЛИЧНЫЙ<br />И БИЗНЕС<br> СЧЕТ",
     "Manage all your financial transactions, make and receive payments. All-in-one space.": "Управляйте всеми вашими финансовыми транзакциями,<br> делайте и получайте платежи.<br> Все в одном месте.",

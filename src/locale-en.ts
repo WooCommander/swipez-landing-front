@@ -6,6 +6,9 @@ export default {
   'Log in': 'Log in',
   'UNITED BANKING': "UNITED BANKING",
   'Connect your partners into unified ecosystem for rapid and secure fund flows': 'Connect your partners into unified ecosystem <br />for rapid and secure fund flows',
+  header: {
+    "Sign Up":"Sign Up",
+  },
   account: {
     'PERSONAL AND BUSINESS ACCOUNT': 'PERSONAL<br />AND BUSINESS<br> ACCOUNT',
     'Manage all your financial transactions, make and receive payments. All-in-one space.': 'Manage all your financial transactions,<br> make and receive payments.<br> All-in-one space.',
